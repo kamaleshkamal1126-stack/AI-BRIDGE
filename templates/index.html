@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AI Bridge | Your AI Opportunity Gateway
+    </title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family:
+                Arial,
+                sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef4ff,
+                    #f8fbff
+                );
+
+            color: #1e293b;
+
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #4f46e5
+                );
+
+            color: white;
+
+            padding: 28px 20px;
+
+            text-align: center;
+
+        }
+
+
+        .header h1 {
+
+            margin: 0;
+
+            font-size: 40px;
+
+        }
+
+
+        .header p {
+
+            margin:
+                8px
+                0
+                0;
+
+            font-size: 17px;
+
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
+        .container {
+
+            max-width: 950px;
+
+            margin:
+                40px
+                auto;
+
+            padding: 20px;
+
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .hero h2 {
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .hero p {
+
+            color: #64748b;
+
+            font-size: 17px;
+
+        }
+
+
+        /* =========================
+           MAIN CARD
+        ========================= */
+
+        .card {
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(0,0,0,0.08);
+
+        }
+
+
+        /* =========================
+           TEXTAREA
+        ========================= */
+
+        textarea {
+
+            width: 100%;
+
+            min-height: 130px;
+
+            padding: 16px;
+
+            border:
+                2px solid
+                #dbeafe;
+
+            border-radius: 12px;
+
+            font-size: 16px;
+
+            resize: vertical;
+
+            outline: none;
+
+        }
+
+
+        textarea:focus {
+
+            border-color:
+                #2563eb;
+
+        }
+
+
+        /* =========================
+           ASK BUTTON
+        ========================= */
+
+        .ask-button {
+
+            width: 100%;
+
+            margin-top: 15px;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background:
+                #2563eb;
+
+            color: white;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+        }
+
+
+        .ask-button:hover {
+
+            background:
+                #1d4ed8;
+
+        }
+
+
+        /* =========================
+           PROFILE BUTTON
+        ========================= */
+
+        .profile-button {
+
+            display: block;
+
+            text-align: center;
+
+            margin-top: 12px;
+
+            padding: 14px;
+
+            border-radius: 12px;
+
+            background:
+                #16a34a;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+
+        .profile-button:hover {
+
+            background:
+                #15803d;
+
+        }
+
+
+        /* =========================
+           OPPORTUNITY BUTTON
+        ========================= */
+
+        .opportunity-button {
+
+            display: block;
+
+            text-align: center;
+
+            margin-top: 12px;
+
+            padding: 14px;
+
+            border-radius: 12px;
+
+            background:
+                #7c3aed;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+
+        .opportunity-button:hover {
+
+            background:
+                #6d28d9;
+
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .features {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 15px;
+
+            margin-top: 30px;
+
+        }
+
+
+        .feature {
+
+            background:
+                #f8fafc;
+
+            padding: 20px;
+
+            text-align: center;
+
+            border-radius: 15px;
+
+            border:
+                1px solid
+                #e2e8f0;
+
+        }
+
+
+        .feature-icon {
+
+            font-size: 30px;
+
+        }
+
+
+        .feature h3 {
+
+            font-size: 16px;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .feature p {
+
+            font-size: 13px;
+
+            color:
+                #64748b;
+
+        }
+
+
+        /* =========================
+           EXAMPLES
+        ========================= */
+
+        .examples {
+
+            margin-top: 30px;
+
+            padding: 20px;
+
+            background:
+                #eff6ff;
+
+            border-radius: 15px;
+
+        }
+
+
+        .examples h3 {
+
+            margin-top: 0;
+
+        }
+
+
+        .example {
+
+            background: white;
+
+            padding:
+                12px
+                14px;
+
+            margin:
+                8px
+                0;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition:
+                0.2s;
+
+        }
+
+
+        .example:hover {
+
+            background:
+                #dbeafe;
+
+            transform:
+                translateX(3px);
+
+        }
+
+
+        /* =========================
+           ANSWER
+        ========================= */
+
+        #answer {
+
+            margin-top: 30px;
+
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+
+            text-align: center;
+
+            padding: 30px;
+
+            color:
+                #64748b;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (
+            max-width: 700px
+        ) {
+
+            .features {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .header h1 {
+
+                font-size: 30px;
+
+            }
+
+
+            .hero h2 {
+
+                font-size: 25px;
+
+            }
+
+
+            .card {
+
+                padding: 20px;
+
+            }
+
+        }
+
+
+        @media (
+            max-width: 450px
+        ) {
+
+            .features {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <div class="header">
+
+        <h1>
+            🌉 AI Bridge
+        </h1>
+
+        <p>
+            Your AI Gateway to Opportunities
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+
+    <div class="container">
+
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <h2>
+                🤖 Ask AI Bridge
+            </h2>
+
+            <p>
+                Find jobs, internships,
+                scholarships, government
+                opportunities and skills using AI.
+            </p>
+
+        </div>
+
+
+
+        <!-- MAIN CARD -->
+
+        <div class="card">
+
+
+            <!-- QUESTION -->
+
+            <textarea
+                id="query"
+                placeholder="Ask something...
+
+Example:
+I need a CSE internship
+
+Example:
+I need a Python job
+
+Example:
+எனக்கு வேலை வேண்டும்"
+            ></textarea>
+
+
+
+            <!-- ASK AI -->
+
+            <button
+                class="ask-button"
+                onclick="askAI()"
+            >
+                🚀 Ask AI Bridge
+            </button>
+
+
+
+            <!-- PROFILE -->
+
+            <a
+                href="/profile"
+                class="profile-button"
+            >
+                👤 Create / Update My Profile
+            </a>
+
+
+
+            <!-- OPPORTUNITIES -->
+
+            <a
+                href="/opportunities"
+                class="opportunity-button"
+            >
+                🔎 Explore All Opportunities
+            </a>
+
+
+
+            <!-- =========================
+                 FEATURES
+            ========================= -->
+
+            <div class="features">
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        💼
+                    </div>
+
+                    <h3>
+                        Jobs
+                    </h3>
+
+                    <p>
+                        Find career opportunities
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🧑‍💻
+                    </div>
+
+                    <h3>
+                        Internships
+                    </h3>
+
+                    <p>
+                        Find internship opportunities
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Education
+                    </h3>
+
+                    <p>
+                        Scholarships and learning
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Skills
+                    </h3>
+
+                    <p>
+                        Discover useful skills
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 EXAMPLES
+            ========================= -->
+
+            <div class="examples">
+
+                <h3>
+                    💡 Try asking
+                </h3>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'I need a CSE job'
+                    )"
+                >
+                    💼 I need a CSE job
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'I need a CSE internship'
+                    )"
+                >
+                    🧑‍💻 I need a CSE internship
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'What skills should I learn?'
+                    )"
+                >
+                    📚 What skills should I learn?
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'I need a scholarship'
+                    )"
+                >
+                    🎓 I need a scholarship
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'I need a Python skill'
+                    )"
+                >
+                    🐍 I need Python skills
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'I need an AI job'
+                    )"
+                >
+                    🤖 I need an AI job
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'எனக்கு CSE internship வேண்டும்'
+                    )"
+                >
+                    🇮🇳 எனக்கு CSE internship வேண்டும்
+                </div>
+
+
+                <div
+                    class="example"
+                    onclick="setQuestion(
+                        'எனக்கு வேலை வேண்டும்'
+                    )"
+                >
+                    🇮🇳 எனக்கு வேலை வேண்டும்
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 AI ANSWER
+            ========================= -->
+
+            <div id="answer"></div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <div class="footer">
+
+        🌉 AI Bridge © 2026
+
+        <br>
+
+        Connecting People with Opportunities
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+
+        // ==========================================
+        // SET EXAMPLE QUESTION
+        // ==========================================
+
+        function setQuestion(question) {
+
+            document.getElementById(
+                "query"
+            ).value = question;
+
+        }
+
+
+
+        // ==========================================
+        // ASK AI BRIDGE
+        // ==========================================
+
+        async function askAI() {
+
+
+            const query =
+                document
+                .getElementById("query")
+                .value
+                .trim();
+
+
+            const answer =
+                document
+                .getElementById("answer");
+
+
+
+            // Empty question
+
+            if (!query) {
+
+                answer.innerHTML = `
+
+                    <div style="
+                        padding:15px;
+                        background:#fff7ed;
+                        border-radius:10px;
+                        color:#9a3412;
+                    ">
+
+                        ⚠️ Please enter your question.
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+
+            // Loading
+
+            answer.innerHTML = `
+
+                <div style="
+                    padding:25px;
+                    text-align:center;
+                    background:#eff6ff;
+                    border-radius:12px;
+                ">
+
+                    🤖 AI Bridge is thinking...
+
+                    <br><br>
+
+                    ⏳ Finding the best
+                    opportunities for you...
+
+                </div>
+
+            `;
+
+
+
+            try {
+
+
+                // Create form data
+
+                const formData =
+                    new URLSearchParams();
+
+
+                formData.append(
+                    "query",
+                    query
+                );
+
+
+
+                // Send request
+
+                const response =
+                    await fetch(
+                        "/ask",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/x-www-form-urlencoded"
+                            },
+
+                            body: formData
+                        }
+                    );
+
+
+
+                // Get response
+
+                const result =
+                    await response.text();
+
+
+
+                // Display response
+
+                answer.innerHTML =
+                    result;
+
+
+
+                // Scroll
+
+                answer.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+
+            }
+
+
+            catch (error) {
+
+
+                answer.innerHTML = `
+
+                    <div style="
+                        padding:20px;
+                        background:#fee2e2;
+                        border-radius:12px;
+                        color:#991b1b;
+                    ">
+
+                        ❌ Unable to connect
+                        to AI Bridge.
+
+                        <br><br>
+
+                        Make sure Flask
+                        is running.
+
+                    </div>
+
+                `;
+
+
+                console.error(
+                    error
+                );
+
+            }
+
+        }
+
+
+        // ==========================================
+        // ENTER KEY SUPPORT
+        // ==========================================
+
+        document
+            .getElementById("query")
+            .addEventListener(
+                "keydown",
+                function(event) {
+
+                    if (
+                        event.key === "Enter"
+                        &&
+                        event.ctrlKey
+                    ) {
+
+                        askAI();
+
+                    }
+
+                }
+            );
+
+
+    </script>
+
+
+</body>
+
+</html>
